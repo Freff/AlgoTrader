@@ -1,0 +1,10 @@
+#ifndef ALGOTRADER_IALGORITHMREGISTRY_HPP
+#define ALGOTRADER_IALGORITHMREGISTRY_HPP
+
+
+class IAlgorithmRegistry {
+
+};
+
+
+#endif
