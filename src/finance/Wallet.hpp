@@ -3,8 +3,9 @@
 
 #include <atomic>
 #include <mutex>
+#include "IWallet.hpp"
 
-class Wallet
+class Wallet : public IWallet
 {
 
 public:

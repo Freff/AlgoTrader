@@ -60,13 +60,52 @@ CMAKE_SOURCE_DIR = /home/chris/AlgoTrader
 CMAKE_BINARY_DIR = /home/chris/AlgoTrader/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/TestAlgo.dir
+
+# All Build rule for target.
+CMakeFiles/TestAlgo.dir/all: googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/TestAlgo.dir/all: googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+CMakeFiles/TestAlgo.dir/all: src/finance/CMakeFiles/finance.dir/all
+	$(MAKE) -f CMakeFiles/TestAlgo.dir/build.make CMakeFiles/TestAlgo.dir/depend
+	$(MAKE) -f CMakeFiles/TestAlgo.dir/build.make CMakeFiles/TestAlgo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target TestAlgo"
+.PHONY : CMakeFiles/TestAlgo.dir/all
+
+# Include target in all.
+all: CMakeFiles/TestAlgo.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TestAlgo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 12
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TestAlgo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/TestAlgo.dir/rule
+
+# Convenience name for target.
+TestAlgo: CMakeFiles/TestAlgo.dir/rule
+
+.PHONY : TestAlgo
+
+# clean rule for target.
+CMakeFiles/TestAlgo.dir/clean:
+	$(MAKE) -f CMakeFiles/TestAlgo.dir/build.make CMakeFiles/TestAlgo.dir/clean
+.PHONY : CMakeFiles/TestAlgo.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/TestAlgo.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/AlgoTrader.dir
 
 # All Build rule for target.
 CMakeFiles/AlgoTrader.dir/all:
 	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/depend
 	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target AlgoTrader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target AlgoTrader"
 .PHONY : CMakeFiles/AlgoTrader.dir/all
 
 # Include target in all.
@@ -76,7 +115,7 @@ all: CMakeFiles/AlgoTrader.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AlgoTrader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/AlgoTrader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/AlgoTrader.dir/rule
@@ -93,6 +132,269 @@ CMakeFiles/AlgoTrader.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/AlgoTrader.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory googletest
+
+# Convenience name for "all" pass in the directory.
+googletest/all: googletest/googlemock/all
+
+.PHONY : googletest/all
+
+# Convenience name for "clean" pass in the directory.
+googletest/clean: googletest/googlemock/clean
+
+.PHONY : googletest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+googletest/preinstall: googletest/googlemock/preinstall
+
+.PHONY : googletest/preinstall
+
+#=============================================================================
+# Directory level rules for directory googletest/googlemock
+
+# Convenience name for "all" pass in the directory.
+googletest/googlemock/all: googletest/googlemock/CMakeFiles/gmock_main.dir/all
+googletest/googlemock/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+googletest/googlemock/all: googletest/googlemock/gtest/all
+
+.PHONY : googletest/googlemock/all
+
+# Convenience name for "clean" pass in the directory.
+googletest/googlemock/clean: googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+googletest/googlemock/clean: googletest/googlemock/CMakeFiles/gmock.dir/clean
+googletest/googlemock/clean: googletest/googlemock/gtest/clean
+
+.PHONY : googletest/googlemock/clean
+
+# Convenience name for "preinstall" pass in the directory.
+googletest/googlemock/preinstall: googletest/googlemock/gtest/preinstall
+
+.PHONY : googletest/googlemock/preinstall
+
+#=============================================================================
+# Target rules for target googletest/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+googletest/googlemock/CMakeFiles/gmock_main.dir/all:
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=19,20,21,22 "Built target gmock_main"
+.PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Include target in all.
+all: googletest/googlemock/CMakeFiles/gmock_main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 0
+.PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+.PHONY : gmock_main
+
+# clean rule for target.
+googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+# clean rule for target.
+clean: googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target googletest/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+googletest/googlemock/CMakeFiles/gmock.dir/all:
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=16,17,18 "Built target gmock"
+.PHONY : googletest/googlemock/CMakeFiles/gmock.dir/all
+
+# Include target in all.
+all: googletest/googlemock/CMakeFiles/gmock.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 0
+.PHONY : googletest/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: googletest/googlemock/CMakeFiles/gmock.dir/rule
+
+.PHONY : gmock
+
+# clean rule for target.
+googletest/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : googletest/googlemock/CMakeFiles/gmock.dir/clean
+
+# clean rule for target.
+clean: googletest/googlemock/CMakeFiles/gmock.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory googletest/googlemock/gtest
+
+# Convenience name for "all" pass in the directory.
+googletest/googlemock/gtest/all: googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+googletest/googlemock/gtest/all: googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+
+.PHONY : googletest/googlemock/gtest/all
+
+# Convenience name for "clean" pass in the directory.
+googletest/googlemock/gtest/clean: googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+googletest/googlemock/gtest/clean: googletest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+.PHONY : googletest/googlemock/gtest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+googletest/googlemock/gtest/preinstall:
+
+.PHONY : googletest/googlemock/gtest/preinstall
+
+#=============================================================================
+# Target rules for target googletest/googlemock/gtest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target gtest_main"
+.PHONY : googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+
+# Include target in all.
+all: googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 0
+.PHONY : googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+.PHONY : googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+
+# clean rule for target.
+clean: googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target googletest/googlemock/gtest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+googletest/googlemock/gtest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f googletest/googlemock/gtest/CMakeFiles/gtest.dir/build.make googletest/googlemock/gtest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f googletest/googlemock/gtest/CMakeFiles/gtest.dir/build.make googletest/googlemock/gtest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target gtest"
+.PHONY : googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+
+# Include target in all.
+all: googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+googletest/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 0
+.PHONY : googletest/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: googletest/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+googletest/googlemock/gtest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f googletest/googlemock/gtest/CMakeFiles/gtest.dir/build.make googletest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+.PHONY : googletest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+# clean rule for target.
+clean: googletest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/finance
+
+# Convenience name for "all" pass in the directory.
+src/finance/all: src/finance/CMakeFiles/finance.dir/all
+
+.PHONY : src/finance/all
+
+# Convenience name for "clean" pass in the directory.
+src/finance/clean: src/finance/CMakeFiles/finance.dir/clean
+
+.PHONY : src/finance/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/finance/preinstall:
+
+.PHONY : src/finance/preinstall
+
+#=============================================================================
+# Target rules for target src/finance/CMakeFiles/finance.dir
+
+# All Build rule for target.
+src/finance/CMakeFiles/finance.dir/all:
+	$(MAKE) -f src/finance/CMakeFiles/finance.dir/build.make src/finance/CMakeFiles/finance.dir/depend
+	$(MAKE) -f src/finance/CMakeFiles/finance.dir/build.make src/finance/CMakeFiles/finance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=10,11,12,13,14,15 "Built target finance"
+.PHONY : src/finance/CMakeFiles/finance.dir/all
+
+# Include target in all.
+all: src/finance/CMakeFiles/finance.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/finance/CMakeFiles/finance.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 src/finance/CMakeFiles/finance.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/AlgoTrader/cmake-build-debug/CMakeFiles 0
+.PHONY : src/finance/CMakeFiles/finance.dir/rule
+
+# Convenience name for target.
+finance: src/finance/CMakeFiles/finance.dir/rule
+
+.PHONY : finance
+
+# clean rule for target.
+src/finance/CMakeFiles/finance.dir/clean:
+	$(MAKE) -f src/finance/CMakeFiles/finance.dir/build.make src/finance/CMakeFiles/finance.dir/clean
+.PHONY : src/finance/CMakeFiles/finance.dir/clean
+
+# clean rule for target.
+clean: src/finance/CMakeFiles/finance.dir/clean
 
 .PHONY : clean
 

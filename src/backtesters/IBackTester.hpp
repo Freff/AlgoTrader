@@ -1,8 +1,0 @@
-#ifndef BACKTESTERS_IBACKTESTER_HPP_
-#define BACKTESTERS_IBACKTESTER_HPP_
-
-
-
-
-
-#endif

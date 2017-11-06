@@ -56,16 +56,51 @@ CMAKE_BINARY_DIR = /home/chris/AlgoTrader/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/chris/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/chris/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/chris/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
-.PHONY : rebuild_cache/fast
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/chris/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/chris/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/chris/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/chris/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,6 +112,28 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/home/chris/clion-2017.2.3/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/chris/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named TestAlgo
+
+# Build rule for target.
+TestAlgo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestAlgo
+.PHONY : TestAlgo
+
+# fast build rule for target.
+TestAlgo/fast:
+	$(MAKE) -f CMakeFiles/TestAlgo.dir/build.make CMakeFiles/TestAlgo.dir/build
+.PHONY : TestAlgo/fast
+
+#=============================================================================
 # Target rules for targets named AlgoTrader
 
 # Build rule for target.
@@ -123,32 +193,70 @@ AlgoTrader/fast:
 	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/build
 .PHONY : AlgoTrader/fast
 
-src/AlgoTrader.o: src/AlgoTrader.cpp.o
+#=============================================================================
+# Target rules for targets named gmock_main
 
-.PHONY : src/AlgoTrader.o
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
 
-# target to build an object file
-src/AlgoTrader.cpp.o:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o
-.PHONY : src/AlgoTrader.cpp.o
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
 
-src/AlgoTrader.i: src/AlgoTrader.cpp.i
+#=============================================================================
+# Target rules for targets named gmock
 
-.PHONY : src/AlgoTrader.i
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
 
-# target to preprocess a source file
-src/AlgoTrader.cpp.i:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.i
-.PHONY : src/AlgoTrader.cpp.i
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
 
-src/AlgoTrader.s: src/AlgoTrader.cpp.s
+#=============================================================================
+# Target rules for targets named gtest_main
 
-.PHONY : src/AlgoTrader.s
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
 
-# target to generate assembly for a file
-src/AlgoTrader.cpp.s:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.s
-.PHONY : src/AlgoTrader.cpp.s
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f googletest/googlemock/gtest/CMakeFiles/gtest.dir/build.make googletest/googlemock/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named finance
+
+# Build rule for target.
+finance: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 finance
+.PHONY : finance
+
+# fast build rule for target.
+finance/fast:
+	$(MAKE) -f src/finance/CMakeFiles/finance.dir/build.make src/finance/CMakeFiles/finance.dir/build
+.PHONY : finance/fast
 
 src/DataLoaders/CSVDataLoader.o: src/DataLoaders/CSVDataLoader.cpp.o
 
@@ -177,59 +285,59 @@ src/DataLoaders/CSVDataLoader.cpp.s:
 	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.s
 .PHONY : src/DataLoaders/CSVDataLoader.cpp.s
 
-src/backtesters/BasicBackTester.o: src/backtesters/BasicBackTester.cpp.o
+src/algorithm/AlgorithmRegistry.o: src/algorithm/AlgorithmRegistry.cpp.o
 
-.PHONY : src/backtesters/BasicBackTester.o
-
-# target to build an object file
-src/backtesters/BasicBackTester.cpp.o:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o
-.PHONY : src/backtesters/BasicBackTester.cpp.o
-
-src/backtesters/BasicBackTester.i: src/backtesters/BasicBackTester.cpp.i
-
-.PHONY : src/backtesters/BasicBackTester.i
-
-# target to preprocess a source file
-src/backtesters/BasicBackTester.cpp.i:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.i
-.PHONY : src/backtesters/BasicBackTester.cpp.i
-
-src/backtesters/BasicBackTester.s: src/backtesters/BasicBackTester.cpp.s
-
-.PHONY : src/backtesters/BasicBackTester.s
-
-# target to generate assembly for a file
-src/backtesters/BasicBackTester.cpp.s:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.s
-.PHONY : src/backtesters/BasicBackTester.cpp.s
-
-src/backtesters/benchmarks/BasicInvestor.o: src/backtesters/benchmarks/BasicInvestor.cpp.o
-
-.PHONY : src/backtesters/benchmarks/BasicInvestor.o
+.PHONY : src/algorithm/AlgorithmRegistry.o
 
 # target to build an object file
-src/backtesters/benchmarks/BasicInvestor.cpp.o:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o
-.PHONY : src/backtesters/benchmarks/BasicInvestor.cpp.o
+src/algorithm/AlgorithmRegistry.cpp.o:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o
+.PHONY : src/algorithm/AlgorithmRegistry.cpp.o
 
-src/backtesters/benchmarks/BasicInvestor.i: src/backtesters/benchmarks/BasicInvestor.cpp.i
+src/algorithm/AlgorithmRegistry.i: src/algorithm/AlgorithmRegistry.cpp.i
 
-.PHONY : src/backtesters/benchmarks/BasicInvestor.i
+.PHONY : src/algorithm/AlgorithmRegistry.i
 
 # target to preprocess a source file
-src/backtesters/benchmarks/BasicInvestor.cpp.i:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.i
-.PHONY : src/backtesters/benchmarks/BasicInvestor.cpp.i
+src/algorithm/AlgorithmRegistry.cpp.i:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.i
+.PHONY : src/algorithm/AlgorithmRegistry.cpp.i
 
-src/backtesters/benchmarks/BasicInvestor.s: src/backtesters/benchmarks/BasicInvestor.cpp.s
+src/algorithm/AlgorithmRegistry.s: src/algorithm/AlgorithmRegistry.cpp.s
 
-.PHONY : src/backtesters/benchmarks/BasicInvestor.s
+.PHONY : src/algorithm/AlgorithmRegistry.s
 
 # target to generate assembly for a file
-src/backtesters/benchmarks/BasicInvestor.cpp.s:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.s
-.PHONY : src/backtesters/benchmarks/BasicInvestor.cpp.s
+src/algorithm/AlgorithmRegistry.cpp.s:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.s
+.PHONY : src/algorithm/AlgorithmRegistry.cpp.s
+
+src/algorithm/BasicInvestor.o: src/algorithm/BasicInvestor.cpp.o
+
+.PHONY : src/algorithm/BasicInvestor.o
+
+# target to build an object file
+src/algorithm/BasicInvestor.cpp.o:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o
+.PHONY : src/algorithm/BasicInvestor.cpp.o
+
+src/algorithm/BasicInvestor.i: src/algorithm/BasicInvestor.cpp.i
+
+.PHONY : src/algorithm/BasicInvestor.i
+
+# target to preprocess a source file
+src/algorithm/BasicInvestor.cpp.i:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.i
+.PHONY : src/algorithm/BasicInvestor.cpp.i
+
+src/algorithm/BasicInvestor.s: src/algorithm/BasicInvestor.cpp.s
+
+.PHONY : src/algorithm/BasicInvestor.s
+
+# target to generate assembly for a file
+src/algorithm/BasicInvestor.cpp.s:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.s
+.PHONY : src/algorithm/BasicInvestor.cpp.s
 
 src/common/CSVRow.o: src/common/CSVRow.cpp.o
 
@@ -258,194 +366,86 @@ src/common/CSVRow.cpp.s:
 	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.s
 .PHONY : src/common/CSVRow.cpp.s
 
-src/finance/Portfolio.o: src/finance/Portfolio.cpp.o
+src/main.o: src/main.cpp.o
 
-.PHONY : src/finance/Portfolio.o
-
-# target to build an object file
-src/finance/Portfolio.cpp.o:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o
-.PHONY : src/finance/Portfolio.cpp.o
-
-src/finance/Portfolio.i: src/finance/Portfolio.cpp.i
-
-.PHONY : src/finance/Portfolio.i
-
-# target to preprocess a source file
-src/finance/Portfolio.cpp.i:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.i
-.PHONY : src/finance/Portfolio.cpp.i
-
-src/finance/Portfolio.s: src/finance/Portfolio.cpp.s
-
-.PHONY : src/finance/Portfolio.s
-
-# target to generate assembly for a file
-src/finance/Portfolio.cpp.s:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.s
-.PHONY : src/finance/Portfolio.cpp.s
-
-src/finance/Position.o: src/finance/Position.cpp.o
-
-.PHONY : src/finance/Position.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/finance/Position.cpp.o:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o
-.PHONY : src/finance/Position.cpp.o
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/finance/Position.i: src/finance/Position.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : src/finance/Position.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/finance/Position.cpp.i:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.i
-.PHONY : src/finance/Position.cpp.i
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/finance/Position.s: src/finance/Position.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : src/finance/Position.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/finance/Position.cpp.s:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.s
-.PHONY : src/finance/Position.cpp.s
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-src/finance/Stock.o: src/finance/Stock.cpp.o
+src/stocks/StockRegistry.o: src/stocks/StockRegistry.cpp.o
 
-.PHONY : src/finance/Stock.o
+.PHONY : src/stocks/StockRegistry.o
 
 # target to build an object file
-src/finance/Stock.cpp.o:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o
-.PHONY : src/finance/Stock.cpp.o
+src/stocks/StockRegistry.cpp.o:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o
+.PHONY : src/stocks/StockRegistry.cpp.o
 
-src/finance/Stock.i: src/finance/Stock.cpp.i
+src/stocks/StockRegistry.i: src/stocks/StockRegistry.cpp.i
 
-.PHONY : src/finance/Stock.i
+.PHONY : src/stocks/StockRegistry.i
 
 # target to preprocess a source file
-src/finance/Stock.cpp.i:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.i
-.PHONY : src/finance/Stock.cpp.i
+src/stocks/StockRegistry.cpp.i:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.i
+.PHONY : src/stocks/StockRegistry.cpp.i
 
-src/finance/Stock.s: src/finance/Stock.cpp.s
+src/stocks/StockRegistry.s: src/stocks/StockRegistry.cpp.s
 
-.PHONY : src/finance/Stock.s
+.PHONY : src/stocks/StockRegistry.s
 
 # target to generate assembly for a file
-src/finance/Stock.cpp.s:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.s
-.PHONY : src/finance/Stock.cpp.s
+src/stocks/StockRegistry.cpp.s:
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.s
+.PHONY : src/stocks/StockRegistry.cpp.s
 
-src/finance/Wallet.o: src/finance/Wallet.cpp.o
+test/finance/TestWallet.o: test/finance/TestWallet.cpp.o
 
-.PHONY : src/finance/Wallet.o
+.PHONY : test/finance/TestWallet.o
 
 # target to build an object file
-src/finance/Wallet.cpp.o:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o
-.PHONY : src/finance/Wallet.cpp.o
+test/finance/TestWallet.cpp.o:
+	$(MAKE) -f CMakeFiles/TestAlgo.dir/build.make CMakeFiles/TestAlgo.dir/test/finance/TestWallet.cpp.o
+.PHONY : test/finance/TestWallet.cpp.o
 
-src/finance/Wallet.i: src/finance/Wallet.cpp.i
+test/finance/TestWallet.i: test/finance/TestWallet.cpp.i
 
-.PHONY : src/finance/Wallet.i
-
-# target to preprocess a source file
-src/finance/Wallet.cpp.i:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.i
-.PHONY : src/finance/Wallet.cpp.i
-
-src/finance/Wallet.s: src/finance/Wallet.cpp.s
-
-.PHONY : src/finance/Wallet.s
-
-# target to generate assembly for a file
-src/finance/Wallet.cpp.s:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.s
-.PHONY : src/finance/Wallet.cpp.s
-
-src/finance/exitconditions/NeverExitCondition.o: src/finance/exitconditions/NeverExitCondition.cpp.o
-
-.PHONY : src/finance/exitconditions/NeverExitCondition.o
-
-# target to build an object file
-src/finance/exitconditions/NeverExitCondition.cpp.o:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o
-.PHONY : src/finance/exitconditions/NeverExitCondition.cpp.o
-
-src/finance/exitconditions/NeverExitCondition.i: src/finance/exitconditions/NeverExitCondition.cpp.i
-
-.PHONY : src/finance/exitconditions/NeverExitCondition.i
+.PHONY : test/finance/TestWallet.i
 
 # target to preprocess a source file
-src/finance/exitconditions/NeverExitCondition.cpp.i:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.i
-.PHONY : src/finance/exitconditions/NeverExitCondition.cpp.i
+test/finance/TestWallet.cpp.i:
+	$(MAKE) -f CMakeFiles/TestAlgo.dir/build.make CMakeFiles/TestAlgo.dir/test/finance/TestWallet.cpp.i
+.PHONY : test/finance/TestWallet.cpp.i
 
-src/finance/exitconditions/NeverExitCondition.s: src/finance/exitconditions/NeverExitCondition.cpp.s
+test/finance/TestWallet.s: test/finance/TestWallet.cpp.s
 
-.PHONY : src/finance/exitconditions/NeverExitCondition.s
-
-# target to generate assembly for a file
-src/finance/exitconditions/NeverExitCondition.cpp.s:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.s
-.PHONY : src/finance/exitconditions/NeverExitCondition.cpp.s
-
-src/tradeloops/MinuteLoop.o: src/tradeloops/MinuteLoop.cpp.o
-
-.PHONY : src/tradeloops/MinuteLoop.o
-
-# target to build an object file
-src/tradeloops/MinuteLoop.cpp.o:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o
-.PHONY : src/tradeloops/MinuteLoop.cpp.o
-
-src/tradeloops/MinuteLoop.i: src/tradeloops/MinuteLoop.cpp.i
-
-.PHONY : src/tradeloops/MinuteLoop.i
-
-# target to preprocess a source file
-src/tradeloops/MinuteLoop.cpp.i:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.i
-.PHONY : src/tradeloops/MinuteLoop.cpp.i
-
-src/tradeloops/MinuteLoop.s: src/tradeloops/MinuteLoop.cpp.s
-
-.PHONY : src/tradeloops/MinuteLoop.s
+.PHONY : test/finance/TestWallet.s
 
 # target to generate assembly for a file
-src/tradeloops/MinuteLoop.cpp.s:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.s
-.PHONY : src/tradeloops/MinuteLoop.cpp.s
-
-src/traders/BasicTrader.o: src/traders/BasicTrader.cpp.o
-
-.PHONY : src/traders/BasicTrader.o
-
-# target to build an object file
-src/traders/BasicTrader.cpp.o:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o
-.PHONY : src/traders/BasicTrader.cpp.o
-
-src/traders/BasicTrader.i: src/traders/BasicTrader.cpp.i
-
-.PHONY : src/traders/BasicTrader.i
-
-# target to preprocess a source file
-src/traders/BasicTrader.cpp.i:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.i
-.PHONY : src/traders/BasicTrader.cpp.i
-
-src/traders/BasicTrader.s: src/traders/BasicTrader.cpp.s
-
-.PHONY : src/traders/BasicTrader.s
-
-# target to generate assembly for a file
-src/traders/BasicTrader.cpp.s:
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.s
-.PHONY : src/traders/BasicTrader.cpp.s
+test/finance/TestWallet.cpp.s:
+	$(MAKE) -f CMakeFiles/TestAlgo.dir/build.make CMakeFiles/TestAlgo.dir/test/finance/TestWallet.cpp.s
+.PHONY : test/finance/TestWallet.cpp.s
 
 # Help Target
 help:
@@ -453,45 +453,41 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... rebuild_cache"
+	@echo "... TestAlgo"
 	@echo "... AlgoTrader"
-	@echo "... src/AlgoTrader.o"
-	@echo "... src/AlgoTrader.i"
-	@echo "... src/AlgoTrader.s"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gtest_main"
+	@echo "... gtest"
+	@echo "... finance"
 	@echo "... src/DataLoaders/CSVDataLoader.o"
 	@echo "... src/DataLoaders/CSVDataLoader.i"
 	@echo "... src/DataLoaders/CSVDataLoader.s"
-	@echo "... src/backtesters/BasicBackTester.o"
-	@echo "... src/backtesters/BasicBackTester.i"
-	@echo "... src/backtesters/BasicBackTester.s"
-	@echo "... src/backtesters/benchmarks/BasicInvestor.o"
-	@echo "... src/backtesters/benchmarks/BasicInvestor.i"
-	@echo "... src/backtesters/benchmarks/BasicInvestor.s"
+	@echo "... src/algorithm/AlgorithmRegistry.o"
+	@echo "... src/algorithm/AlgorithmRegistry.i"
+	@echo "... src/algorithm/AlgorithmRegistry.s"
+	@echo "... src/algorithm/BasicInvestor.o"
+	@echo "... src/algorithm/BasicInvestor.i"
+	@echo "... src/algorithm/BasicInvestor.s"
 	@echo "... src/common/CSVRow.o"
 	@echo "... src/common/CSVRow.i"
 	@echo "... src/common/CSVRow.s"
-	@echo "... src/finance/Portfolio.o"
-	@echo "... src/finance/Portfolio.i"
-	@echo "... src/finance/Portfolio.s"
-	@echo "... src/finance/Position.o"
-	@echo "... src/finance/Position.i"
-	@echo "... src/finance/Position.s"
-	@echo "... src/finance/Stock.o"
-	@echo "... src/finance/Stock.i"
-	@echo "... src/finance/Stock.s"
-	@echo "... src/finance/Wallet.o"
-	@echo "... src/finance/Wallet.i"
-	@echo "... src/finance/Wallet.s"
-	@echo "... src/finance/exitconditions/NeverExitCondition.o"
-	@echo "... src/finance/exitconditions/NeverExitCondition.i"
-	@echo "... src/finance/exitconditions/NeverExitCondition.s"
-	@echo "... src/tradeloops/MinuteLoop.o"
-	@echo "... src/tradeloops/MinuteLoop.i"
-	@echo "... src/tradeloops/MinuteLoop.s"
-	@echo "... src/traders/BasicTrader.o"
-	@echo "... src/traders/BasicTrader.i"
-	@echo "... src/traders/BasicTrader.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/stocks/StockRegistry.o"
+	@echo "... src/stocks/StockRegistry.i"
+	@echo "... src/stocks/StockRegistry.s"
+	@echo "... test/finance/TestWallet.o"
+	@echo "... test/finance/TestWallet.i"
+	@echo "... test/finance/TestWallet.s"
 .PHONY : help
 
 

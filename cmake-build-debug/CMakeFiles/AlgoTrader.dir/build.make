@@ -57,57 +57,33 @@ include CMakeFiles/AlgoTrader.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/AlgoTrader.dir/flags.make
 
-CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
-CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o: ../src/backtesters/benchmarks/BasicInvestor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o -c /home/chris/AlgoTrader/src/backtesters/benchmarks/BasicInvestor.cpp
+CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
+CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o: ../src/algorithm/BasicInvestor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o -c /home/chris/AlgoTrader/src/algorithm/BasicInvestor.cpp
 
-CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/backtesters/benchmarks/BasicInvestor.cpp > CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.i
+CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/algorithm/BasicInvestor.cpp > CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.i
 
-CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/backtesters/benchmarks/BasicInvestor.cpp -o CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.s
+CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/algorithm/BasicInvestor.cpp -o CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.s
 
-CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o.requires:
+CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o.requires:
 
-.PHONY : CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o.requires
+.PHONY : CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o.requires
 
-CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o.provides.build
-.PHONY : CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o.provides
+CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o.provides.build
+.PHONY : CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o.provides
 
-CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o
-
-
-CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
-CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o: ../src/backtesters/BasicBackTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o -c /home/chris/AlgoTrader/src/backtesters/BasicBackTester.cpp
-
-CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/backtesters/BasicBackTester.cpp > CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.i
-
-CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/backtesters/BasicBackTester.cpp -o CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.s
-
-CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o.requires:
-
-.PHONY : CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o.requires
-
-CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o.provides.build
-.PHONY : CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o.provides
-
-CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o
+CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o
 
 
 CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
 CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.o: ../src/common/CSVRow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.o -c /home/chris/AlgoTrader/src/common/CSVRow.cpp
 
 CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.i: cmake_force
@@ -131,7 +107,7 @@ CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.o.provides.build: CMakeFiles/Alg
 
 CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
 CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o: ../src/DataLoaders/CSVDataLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o -c /home/chris/AlgoTrader/src/DataLoaders/CSVDataLoader.cpp
 
 CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.i: cmake_force
@@ -153,231 +129,99 @@ CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o.provides: CMakeFil
 CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o
 
 
-CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
-CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o: ../src/finance/exitconditions/NeverExitCondition.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o -c /home/chris/AlgoTrader/src/finance/exitconditions/NeverExitCondition.cpp
+CMakeFiles/AlgoTrader.dir/src/main.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
+CMakeFiles/AlgoTrader.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AlgoTrader.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/main.cpp.o -c /home/chris/AlgoTrader/src/main.cpp
 
-CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/finance/exitconditions/NeverExitCondition.cpp > CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.i
+CMakeFiles/AlgoTrader.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/main.cpp > CMakeFiles/AlgoTrader.dir/src/main.cpp.i
 
-CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/finance/exitconditions/NeverExitCondition.cpp -o CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.s
+CMakeFiles/AlgoTrader.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/main.cpp -o CMakeFiles/AlgoTrader.dir/src/main.cpp.s
 
-CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o.requires:
+CMakeFiles/AlgoTrader.dir/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o.requires
+.PHONY : CMakeFiles/AlgoTrader.dir/src/main.cpp.o.requires
 
-CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o.provides.build
-.PHONY : CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o.provides
+CMakeFiles/AlgoTrader.dir/src/main.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/AlgoTrader.dir/src/main.cpp.o.provides
 
-CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o
-
-
-CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
-CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o: ../src/finance/Portfolio.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o -c /home/chris/AlgoTrader/src/finance/Portfolio.cpp
-
-CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/finance/Portfolio.cpp > CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.i
-
-CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/finance/Portfolio.cpp -o CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.s
-
-CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o.requires:
-
-.PHONY : CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o.requires
-
-CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o.provides.build
-.PHONY : CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o.provides
-
-CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o
+CMakeFiles/AlgoTrader.dir/src/main.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/main.cpp.o
 
 
-CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
-CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o: ../src/finance/Position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o -c /home/chris/AlgoTrader/src/finance/Position.cpp
+CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
+CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o: ../src/stocks/StockRegistry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o -c /home/chris/AlgoTrader/src/stocks/StockRegistry.cpp
 
-CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/finance/Position.cpp > CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.i
+CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/stocks/StockRegistry.cpp > CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.i
 
-CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/finance/Position.cpp -o CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.s
+CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/stocks/StockRegistry.cpp -o CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.s
 
-CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o.requires:
+CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o.requires:
 
-.PHONY : CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o.requires
+.PHONY : CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o.requires
 
-CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o.provides.build
-.PHONY : CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o.provides
+CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o.provides.build
+.PHONY : CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o.provides
 
-CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o
-
-
-CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
-CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o: ../src/finance/Stock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o -c /home/chris/AlgoTrader/src/finance/Stock.cpp
-
-CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/finance/Stock.cpp > CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.i
-
-CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/finance/Stock.cpp -o CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.s
-
-CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o.requires:
-
-.PHONY : CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o.requires
-
-CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o.provides.build
-.PHONY : CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o.provides
-
-CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o
+CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o
 
 
-CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
-CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o: ../src/finance/Wallet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o -c /home/chris/AlgoTrader/src/finance/Wallet.cpp
+CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
+CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o: ../src/algorithm/AlgorithmRegistry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o -c /home/chris/AlgoTrader/src/algorithm/AlgorithmRegistry.cpp
 
-CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/finance/Wallet.cpp > CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.i
+CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/algorithm/AlgorithmRegistry.cpp > CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.i
 
-CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/finance/Wallet.cpp -o CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.s
+CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/algorithm/AlgorithmRegistry.cpp -o CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.s
 
-CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o.requires:
+CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o.requires:
 
-.PHONY : CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o.requires
+.PHONY : CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o.requires
 
-CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o.provides.build
-.PHONY : CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o.provides
+CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o.provides.build
+.PHONY : CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o.provides
 
-CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o
-
-
-CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
-CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o: ../src/tradeloops/MinuteLoop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o -c /home/chris/AlgoTrader/src/tradeloops/MinuteLoop.cpp
-
-CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/tradeloops/MinuteLoop.cpp > CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.i
-
-CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/tradeloops/MinuteLoop.cpp -o CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.s
-
-CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o.requires:
-
-.PHONY : CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o.requires
-
-CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o.provides.build
-.PHONY : CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o.provides
-
-CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o
-
-
-CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
-CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o: ../src/traders/BasicTrader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o -c /home/chris/AlgoTrader/src/traders/BasicTrader.cpp
-
-CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/traders/BasicTrader.cpp > CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.i
-
-CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/traders/BasicTrader.cpp -o CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.s
-
-CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o.requires:
-
-.PHONY : CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o.requires
-
-CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o.provides.build
-.PHONY : CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o.provides
-
-CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o
-
-
-CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o: CMakeFiles/AlgoTrader.dir/flags.make
-CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o: ../src/AlgoTrader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o -c /home/chris/AlgoTrader/src/AlgoTrader.cpp
-
-CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/AlgoTrader/src/AlgoTrader.cpp > CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.i
-
-CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/AlgoTrader/src/AlgoTrader.cpp -o CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.s
-
-CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o.requires:
-
-.PHONY : CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o.requires
-
-CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o.provides: CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AlgoTrader.dir/build.make CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o.provides.build
-.PHONY : CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o.provides
-
-CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o
+CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o.provides.build: CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o
 
 
 # Object files for target AlgoTrader
 AlgoTrader_OBJECTS = \
-"CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o" \
-"CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o" \
+"CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o" \
 "CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.o" \
 "CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o" \
-"CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o" \
-"CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o" \
-"CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o" \
-"CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o" \
-"CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o" \
-"CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o" \
-"CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o" \
-"CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o"
+"CMakeFiles/AlgoTrader.dir/src/main.cpp.o" \
+"CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o" \
+"CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o"
 
 # External object files for target AlgoTrader
 AlgoTrader_EXTERNAL_OBJECTS =
 
-AlgoTrader: CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o
-AlgoTrader: CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o
+AlgoTrader: CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o
 AlgoTrader: CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.o
 AlgoTrader: CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o
-AlgoTrader: CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o
-AlgoTrader: CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o
-AlgoTrader: CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o
-AlgoTrader: CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o
-AlgoTrader: CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o
-AlgoTrader: CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o
-AlgoTrader: CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o
-AlgoTrader: CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o
+AlgoTrader: CMakeFiles/AlgoTrader.dir/src/main.cpp.o
+AlgoTrader: CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o
+AlgoTrader: CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o
 AlgoTrader: CMakeFiles/AlgoTrader.dir/build.make
 AlgoTrader: CMakeFiles/AlgoTrader.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable AlgoTrader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chris/AlgoTrader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable AlgoTrader"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AlgoTrader.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -385,18 +229,12 @@ CMakeFiles/AlgoTrader.dir/build: AlgoTrader
 
 .PHONY : CMakeFiles/AlgoTrader.dir/build
 
-CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/backtesters/benchmarks/BasicInvestor.cpp.o.requires
-CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/backtesters/BasicBackTester.cpp.o.requires
+CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o.requires
 CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.o.requires
 CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o.requires
-CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/finance/exitconditions/NeverExitCondition.cpp.o.requires
-CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/finance/Portfolio.cpp.o.requires
-CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/finance/Position.cpp.o.requires
-CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/finance/Stock.cpp.o.requires
-CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/finance/Wallet.cpp.o.requires
-CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/tradeloops/MinuteLoop.cpp.o.requires
-CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/traders/BasicTrader.cpp.o.requires
-CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/AlgoTrader.cpp.o.requires
+CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/main.cpp.o.requires
+CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o.requires
+CMakeFiles/AlgoTrader.dir/requires: CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o.requires
 
 .PHONY : CMakeFiles/AlgoTrader.dir/requires
 
