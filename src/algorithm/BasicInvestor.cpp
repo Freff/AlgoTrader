@@ -6,7 +6,7 @@
 
 #include "../common/CSVRow.hpp"
 
-#include "../finance/Stock.hpp"
+#include "../stocks/Stock.hpp"
 #include "../finance/Wallet.hpp"
 #include "../finance/Portfolio.hpp"
 #include "../finance/Position.hpp"
@@ -16,6 +16,10 @@
 
 //Date	Time	Open	High	Low	Close	Volume
 
+BasicInvestor::BasicInvestor(std::shared_ptr<IWallet> wallet)
+{
+    _wallet = wallet;
+}
 BasicInvestor::BasicInvestor()
 {
 
@@ -32,15 +36,19 @@ std::istream& operator>>(std::istream& str, CSVRow& data)
     return str;
 }
 
+void BasicInvestor::setWallet(std::shared_ptr<IWallet> wallet)
+{
+    _wallet = wallet;
+}
+
 void BasicInvestor::setStockRegistry(std::shared_ptr<IStockRegistry> stock)
 {
-
+    _stock_registry = stock;
 }
 
 void BasicInvestor::run()
 {
 	auto stock = std::make_shared<Stock>();
-	auto wallet = Wallet(100000.0);
 
 	auto portfolio = Portfolio();
 
@@ -73,9 +81,6 @@ void BasicInvestor::run()
 
 		std::cout << position.getValue() << std::endl;
 
-
-
-		//std::cout << "4th Element(" << row[3] << ")\n";
 	}
 
 }

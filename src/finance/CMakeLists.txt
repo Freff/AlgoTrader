@@ -3,24 +3,33 @@ project(AlgoTrader)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES
-
+set(HEADERS
         exitconditions/IExitCondition.hpp
         exitconditions/NeverExitCondition.hpp
-        exitconditions/NeverExitCondition.cpp
 
         IPortfolio.hpp
         IPosition.hpp
         IWallet.hpp
         Portfolio.hpp
-        Portfolio.cpp
         Position.hpp
-        Position.cpp
-        Stock.hpp
-        Stock.cpp
+        ../stocks/Stock.hpp
         Wallet.hpp
+        )
+
+set(SOURCE_FILES
+
+
+        exitconditions/NeverExitCondition.cpp
+
+
+        Portfolio.cpp
+
+        Position.cpp
+
+        ../stocks/Stock.cpp
+
         Wallet.cpp
 )
 
 
-add_library(finance ${SOURCE_FILES})
+add_library(finance ${SOURCE_FILES} ${HEADERS})

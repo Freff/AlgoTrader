@@ -1,2 +1,0 @@
-/usr/bin/ar qc libfinanced.a  CMakeFiles/finance.dir/exitconditions/NeverExitCondition.cpp.o CMakeFiles/finance.dir/Portfolio.cpp.o CMakeFiles/finance.dir/Position.cpp.o CMakeFiles/finance.dir/Stock.cpp.o CMakeFiles/finance.dir/Wallet.cpp.o
-/usr/bin/ranlib libfinanced.a

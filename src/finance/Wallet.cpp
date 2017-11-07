@@ -53,6 +53,7 @@ bool Wallet::makeTransaction(double cost)
 {
 	std::lock_guard<std::mutex> lock(_balanceMutex);
 
+	// TODO: should this throw?
 	if (_balance - cost < 0 )
 	{
 		return false;
@@ -61,7 +62,5 @@ bool Wallet::makeTransaction(double cost)
 	// should probably wrap all this shit in a transaction object
 
 	_balance -= cost;
-
-
 	return true;
 }

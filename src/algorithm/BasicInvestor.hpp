@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "../finance/Position.hpp"
-#include "../finance/Stock.hpp"
+#include "../stocks/Stock.hpp"
 #include "../stocks/IStockRegistry.hpp"
 
 #include "IAlgorithm.hpp"
@@ -18,9 +18,11 @@ class BasicInvestor : public IAlgorithm
 
 public:
 
+    BasicInvestor(std::shared_ptr<IWallet>);
 	BasicInvestor();
     ~BasicInvestor();
 
+    void setWallet(std::shared_ptr<IWallet> wallet);
 	void setStockRegistry(std::shared_ptr<IStockRegistry> stock);
 	void run();
 
@@ -28,6 +30,8 @@ public:
 private:
 
 	Position _positions;
+    std::shared_ptr<IWallet> _wallet;
+    std::shared_ptr<IStockRegistry> _stock_registry;
 
 
 };

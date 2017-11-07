@@ -5,7 +5,7 @@
 #include <memory>
 
 #include "IPosition.hpp"
-#include "Stock.hpp"
+#include "../stocks/Stock.hpp"
 
 #include "exitconditions/IExitCondition.hpp"
 

@@ -10,3 +10,8 @@ void StockRegistry::load(std::string)
 {
 
 }
+
+std::shared_ptr<IStock> StockRegistry::getStock(std::string)
+{
+
+}

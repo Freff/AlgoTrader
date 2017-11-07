@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/AlgoTrader.dir/src/algorithm/BasicInvestor.cpp.o CMakeFiles/AlgoTrader.dir/src/common/CSVRow.cpp.o CMakeFiles/AlgoTrader.dir/src/DataLoaders/CSVDataLoader.cpp.o CMakeFiles/AlgoTrader.dir/src/main.cpp.o CMakeFiles/AlgoTrader.dir/src/stocks/StockRegistry.cpp.o CMakeFiles/AlgoTrader.dir/src/algorithm/AlgorithmRegistry.cpp.o  -o AlgoTrader 

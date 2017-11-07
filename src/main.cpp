@@ -20,17 +20,12 @@
 
 int main()
 {
-
-    std ::shared_ptr<BasicInvestor> basicTest = std::make_shared<BasicInvestor>();
-
-    basicTest->run();
-
     std::shared_ptr<IWallet> wallet = std::make_shared<Wallet>(1000.0);
     std::shared_ptr<IStockRegistry> sr = std::make_shared<StockRegistry>();
     sr->load("res");
 
     std::shared_ptr<IAlgorithmRegistry> ar = std::make_shared<AlgorithmRegistry>();
-    ar->addAlgorithm("basic", std::make_shared<BasicInvestor>());
+    ar->addAlgorithm("basic", std::make_shared<BasicInvestor>(wallet));
 
     auto a = ar->getAlgorithm("basic");
     a->run();
