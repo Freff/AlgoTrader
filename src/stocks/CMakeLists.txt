@@ -9,7 +9,9 @@ set(HEADERS
         Stock.hpp
 
         IStockRegistry.hpp
+        IStockSubscriber.hpp
         StockRegistry.hpp
+
         )
 
 set(SOURCE_FILES

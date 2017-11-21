@@ -2,8 +2,11 @@
 #define FINANCE_STOCK_HPP_
 
 #include <string>
+#include <vector>
+#include "IStockSubscriber.hpp"
+#include "IStock.hpp"
 
-class Stock
+class Stock : public IStock
 {
 
 
@@ -23,6 +26,10 @@ public:
 
 	std::string toString();
 
+	void registerSubscriber(std::shared_ptr<IStockSubscriber> sub);
+    void update();
+    void tick();
+
 private:
 
 
@@ -32,6 +39,8 @@ private:
 	double _low;
 	double _volume;
 
+
+    std::vector<std::shared_ptr<IStockSubscriber> > _subs;
 
 };
 

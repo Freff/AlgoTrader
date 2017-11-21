@@ -50,3 +50,23 @@ std::string Stock::toString()
 	strs << "Open: " << _open << ", High: " << _high << ", Low: " << _low << ", Close: " << _close << ", Volume: " << _volume << ".";
 	return strs.str();
 }
+
+void Stock::registerSubscriber(std::shared_ptr<IStockSubscriber> sub)
+{
+    _subs.push_back(sub);
+}
+
+void Stock::update()
+{
+    for (const auto &sub : _subs)
+    {
+        sub->updated(*this);
+    }
+}
+void Stock::tick()
+{
+    for (const auto &sub : _subs)
+    {
+        sub->tick(*this);
+    }
+}

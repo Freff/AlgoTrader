@@ -22,7 +22,7 @@ int main()
 {
     std::shared_ptr<IWallet> wallet = std::make_shared<Wallet>(1000.0);
     std::shared_ptr<IStockRegistry> sr = std::make_shared<StockRegistry>();
-    sr->load("res");
+    sr->load("IBM", "res/IBM_unadjusted.txt");
 
     std::shared_ptr<IAlgorithmRegistry> ar = std::make_shared<AlgorithmRegistry>();
     ar->addAlgorithm("basic", std::make_shared<BasicInvestor>(wallet));

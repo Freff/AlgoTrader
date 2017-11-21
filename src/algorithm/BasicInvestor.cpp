@@ -79,8 +79,10 @@ void BasicInvestor::run()
 
 
 
-		std::cout << position.getValue() << std::endl;
+		//
 
 	}
+    std::string out = "Buy and hold value: £" + std::to_string(position.getValue());
+    std::cout << out << std::endl;
 
 }

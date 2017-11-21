@@ -5,7 +5,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 ADD_SUBDIRECTORY (googletest)
 enable_testing()
-include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+include_directories(googletest/googletest/include googletest/googletest)
+include_directories(googletest/googlemock/include googletest/googlemock)
 
 add_subdirectory(src/finance)
 add_subdirectory(src/algorithm)
@@ -33,9 +34,11 @@ add_executable(AlgoTrader ${SOURCE_FILES})
 target_link_libraries(AlgoTrader finance algorithm stocks)
 
 set(TEST_FILES
-        test/finance/TestWallet.cpp)
+        test/finance/TestWallet.cpp
+        test/stocks/TestStockFlow.cpp)
 
 add_executable(TestAlgo ${TEST_FILES})
 target_link_libraries(TestAlgo finance algorithm stocks)
 
-target_link_libraries(TestAlgo gtest gtest_main)
+target_link_libraries(TestAlgo gtest gtest_main gmock)
+
