@@ -24,6 +24,7 @@
 #include <json.hpp>
 
 #include <sstream>
+#include <fstream>
 
 using json = nlohmann::json;
 
@@ -43,8 +44,20 @@ int main()
 //    auto a = ar->getAlgorithm("basic");
 //    a->run();
 
+    std::ifstream inFile("secret-api-key.txt");
 
-    std::string url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo";
+    std::string secret;
+
+    if(inFile.good())
+    {
+        std::getline(inFile, secret);
+    }
+
+    inFile.close();
+
+
+
+    std::string url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&outputsize=compact&interval=1min&apikey=" + secret;
 
     try
     {

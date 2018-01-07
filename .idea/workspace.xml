@@ -16,8 +16,8 @@
       <config projectName="AlgoTrader" targetName="test-reference_access" />
       <config projectName="AlgoTrader" targetName="test-noexcept" />
       <config projectName="AlgoTrader" targetName="test-msgpack" />
+      <config projectName="AlgoTrader" targetName="finance" />
       <config projectName="AlgoTrader" targetName="ExperimentalUpdate" />
-      <config projectName="AlgoTrader" targetName="curlpp" />
       <config projectName="AlgoTrader" targetName="test-concepts" />
       <config projectName="AlgoTrader" targetName="gtest" />
       <config projectName="AlgoTrader" targetName="gmock_main" />
@@ -31,10 +31,10 @@
       <config projectName="AlgoTrader" targetName="test-constructor2" />
       <config projectName="AlgoTrader" targetName="test-constructor1" />
       <config projectName="AlgoTrader" targetName="ContinuousMemCheck" />
+      <config projectName="AlgoTrader" targetName="NightlyCoverage" />
       <config projectName="AlgoTrader" targetName="test-json_pointer" />
       <config projectName="AlgoTrader" targetName="algorithm" />
       <config projectName="AlgoTrader" targetName="ExperimentalStart" />
-      <config projectName="AlgoTrader" targetName="test-conversions" />
       <config projectName="AlgoTrader" targetName="catch_main" />
       <config projectName="AlgoTrader" targetName="test-cbor" />
       <config projectName="AlgoTrader" targetName="test-iterators2" />
@@ -44,7 +44,6 @@
       <config projectName="AlgoTrader" targetName="test-algorithms" />
       <config projectName="AlgoTrader" targetName="NightlyStart" />
       <config projectName="AlgoTrader" targetName="test-inspection" />
-      <config projectName="AlgoTrader" targetName="test-modifiers" />
       <config projectName="AlgoTrader" targetName="test-element_access2" />
       <config projectName="AlgoTrader" targetName="test-element_access1" />
       <config projectName="AlgoTrader" targetName="Nightly" />
@@ -55,6 +54,7 @@
       <config projectName="AlgoTrader" targetName="test-class_const_iterator" />
       <config projectName="AlgoTrader" targetName="NightlySubmit" />
       <config projectName="AlgoTrader" targetName="ContinuousSubmit" />
+      <config projectName="AlgoTrader" targetName="curlpp" />
       <config projectName="AlgoTrader" targetName="NightlyMemoryCheck" />
       <config projectName="AlgoTrader" targetName="gmock" />
       <config projectName="AlgoTrader" targetName="ExperimentalSubmit" />
@@ -71,8 +71,8 @@
       <config projectName="AlgoTrader" targetName="NightlyUpdate" />
       <config projectName="AlgoTrader" targetName="stocks" />
       <config projectName="AlgoTrader" targetName="ExperimentalBuild" />
-      <config projectName="AlgoTrader" targetName="finance" />
-      <config projectName="AlgoTrader" targetName="NightlyCoverage" />
+      <config projectName="AlgoTrader" targetName="test-conversions" />
+      <config projectName="AlgoTrader" targetName="test-modifiers" />
       <config projectName="AlgoTrader" targetName="ExperimentalCoverage" />
       <config projectName="AlgoTrader" targetName="ContinuousConfigure" />
       <config projectName="AlgoTrader" targetName="gtest_main" />
@@ -87,11 +87,7 @@
   <component name="ChangeListManager">
     <list default="true" id="546215b5-0a16-4a2d-aed9-b663153541ff" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stocks/IStockSubscriber.hpp" afterPath="$PROJECT_DIR$/src/stocks/IStockSubscriber.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stocks/Stock.cpp" afterPath="$PROJECT_DIR$/src/stocks/Stock.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/stocks/TestStockFlow.cpp" afterPath="$PROJECT_DIR$/test/stocks/TestStockFlow.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,23 +97,33 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="234">
+                    <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="46" column="124" lean-forward="false" selection-start-line="46" selection-start-column="124" selection-end-line="46" selection-end-column="124" />
+            <state relative-caret-position="179">
+              <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
               <folding>
                 <element signature="e#313#332#0" expanded="true" />
               </folding>
@@ -732,7 +738,8 @@
       <workItem from="1515258856300" duration="1414000" />
       <workItem from="1515263476170" duration="1047000" />
       <workItem from="1515265468968" duration="1571000" />
-      <workItem from="1515330911385" duration="660000" />
+      <workItem from="1515330911385" duration="1259000" />
+      <workItem from="1515333219296" duration="1012000" />
     </task>
     <servers />
   </component>
@@ -769,19 +776,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69777000" />
+    <option name="totallyTimeSpent" value="71388000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1857" height="1092" extended-state="6" />
+    <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16280323" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15729167" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46728015" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46728015" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1076,21 +1083,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding>
+            <element signature="e#313#332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="46" column="124" lean-forward="false" selection-start-line="46" selection-start-column="124" selection-end-line="46" selection-end-column="124" />
-          <folding>
-            <element signature="e#313#332#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
