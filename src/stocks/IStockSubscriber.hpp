@@ -10,8 +10,11 @@ class IStockSubscriber
 public:
     virtual ~IStockSubscriber() = default;
 
-    virtual void tick(IStock&) = 0;
-    virtual void updated(IStock&) = 0;
+    virtual void tick() = 0;
+    virtual void tradingStart() = 0;
+    virtual void dayStart() = 0;
+    virtual void dayEnd() = 0;
+    virtual void tradingEnd() = 0;
 
 };
 

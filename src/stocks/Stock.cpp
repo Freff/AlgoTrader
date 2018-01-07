@@ -60,13 +60,13 @@ void Stock::update()
 {
     for (const auto &sub : _subs)
     {
-        sub->updated(*this);
+        //sub->updated(*this);
     }
 }
 void Stock::tick()
 {
     for (const auto &sub : _subs)
     {
-        sub->tick(*this);
+        //sub->tick(*this);
     }
 }
